@@ -43,7 +43,7 @@ class MyAppState extends State<MyApp> {
                         });
                       }, onFailedToReceiveAd: (String error) {
                         this.error = error;
-                      });
+                      }, onReceiveAd: () {  });
                     }),
                 Text(videoCompleted ? 'Video completed!' : '',
                   style: TextStyle(color: Colors.green),
